@@ -11,3 +11,13 @@
   backdrop-filter: blur(10px); 
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 991px) {
+  .navbar {
+    padding: 10px 0 !important;
+  }
+
+  .navbar-nav {
+    gap: 15px !important;
+    margin-top: 15px;
+  }
+}
