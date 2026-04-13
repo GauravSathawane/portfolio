@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-cyan: #81ecec;
+  --primary-yellow: #ffeaa7;
+  --primary-pink: #ff7675;
+  --text-dark: #2d3436;
+  --text-muted: #636e72;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg-blobs {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+  filter: blur(80px); /* CRITICAL: This creates the soft cloud effect */
+  opacity: 0.5;
+  background: 
+    radial-gradient(circle at 40% 20%, #81ecec 0%, transparent 30%),
+    radial-gradient(circle at 60% 25%, #ffeaa7 0%, transparent 30%),
+    radial-gradient(circle at 50% 40%, #ff7675 0%, transparent 30%);
+}
+
+.section-label {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  border: 1px solid #eee;
+  padding: 5px 15px;
+  margin-bottom: 2rem;
+}
+
+.btn-outline-dark {
+   border: 2px solid var(--text-dark);
+   border-radius: 0; /* Changed comment style here */
+   font-weight: 600;
+   padding: 8px 25px;
+}
+/* Premium Dark Footer Styles */
+.footer-dark {
+  background-color: #0a192f; /* Deep navy background */
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-link {
+  color: #00a8ff; /* Bright blue icons */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+}
+
+.footer-text {
+  color: #8892b0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
