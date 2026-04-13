@@ -74,3 +74,58 @@ body {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+/* Fix the Profile Picture for mobile */
+@media (max-width: 576px) {
+  .big-avatar {
+    width: 130px !important;
+    height: 130px !important;
+    border-width: 4px !important;
+  }
+  
+  /* Pushes content down further on mobile because fixed navbars take more space when collapsed */
+  .hero-section {
+    padding-top: 120px !important;
+  }
+}
+
+/* Adjust the HUGE titles for small phones */
+@media (max-width: 480px) {
+  .hero-huge {
+    font-size: 3.2rem !important; /* Smaller size for very narrow screens */
+    letter-spacing: -1px;
+  }
+  
+  .hero-content-split .mockup-container {
+    padding: 0 10px; /* Prevents mockup from touching screen edges */
+  }
+}
+
+/* Fix for Tablet parallel layout */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content-split {
+    flex-direction: column !important; /* Stack on tablets too for better readability */
+    text-align: center !important;
+  }
+  
+  .hero-content-split .main-titles {
+    text-align: center !important;
+  }
+}
+/* Ensure all sections have better horizontal padding on mobile */
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Skill cards on mobile (ensure they are side-by-side or readable) */
+.skill-card {
+  padding: 20px 10px !important;
+}
+
+/* Prevent horizontal scroll on mobile */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
