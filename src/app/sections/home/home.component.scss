@@ -410,3 +410,63 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+/* New Grey Background Section */
+.experience-grey {
+  background-color: #f8f9fa; /* Light grey background */
+  color: #2d3436;
+  position: relative;
+}
+
+.timeline-container-grey {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #00a8ff; /* Keeps the blue line from your screenshot */
+}
+
+.timeline-dot-grey {
+  position: absolute;
+  left: -41px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f9fa; /* Matches section background */
+  border: 2px solid #00a8ff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.text-primary-blue {
+  color: #00a8ff; /* Professional blue for the company name */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-list-grey {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: #636e72;
+    line-height: 1.6;
+
+    &::before {
+      content: "•";
+      color: #00a8ff;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+/* Updated Hover for Grey Theme */
+.timeline-item:hover {
+  .timeline-dot-grey {
+    background-color: #00a8ff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+}
